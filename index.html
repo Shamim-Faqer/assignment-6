@@ -1,252 +1,251 @@
 <!DOCTYPE html>
-<html lang="en" class="w-[1920px] h-[1080px] bg-green-50">
+<html lang="en" class="bg-green-50">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Assignment 5</title>
-	<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-	
-	<header class="w-full h-[100px] flex justify-between items-center px-8 bg-white ">
-		<div class="leftHeader flex gap-4 items-center">
-			<img class="w-[62px] h-[62px] justify-start" src="static/logo.png" alt="" />
-			<p class="logoText text-5xl font-extrabold text-green-500 ">Emergency Services</p>
-		</div>
-		
-		<div class="rightHeader flex justify-end items-center gap-6">
-			
-			<div id="heartBadge" class="badge badge-lg p-5 border-none bg-red-100 text-red-500 font-bold text-3xl shadow-md">
-				<span>❤️</span>
-				<span class="ml-2">2</span>
-			</div>
-			
-			<div id="coinBadge" class="badge badge-lg p-5 border-none bg-yellow-100 text-yellow-600 font-bold text-3xl shadow-md">
-				<span>💰</span>
-				<span class="ml-2">200</span>
-			</div>
-			
-			<div id="copyBadge" class="badge badge-lg p-5 border-none bg-blue-100 text-blue-600 font-bold text-3xl shadow-md">
-				<span>📋</span>
-				<span class="ml-2">5</span>
-			</div>
-			
-		</div>
-	</header>
-	<main>
-		<div id="hero" class="w-full h-[240px] bg-green-700 flex flex-col gap-4 justify-center items-center ">
-			<img id="bannerLogo" class="w-[92px] h-[92px]" src="static/logo-dark.png" alt="" />
-			<h1 id="bannerTitle" class="text-5xl text-white font-bold" >Emergency Service Directory</h1>
-			<p id="bannerDetail" class="text-xl text-white " >Government Emergency Services at Your Fingertip – A Project by Government of the People’s
-				Republic of Bangladesh</p>
-		</div>
-		
-		
-		<div id="contentContainer" class="grid grid-cols-12 gap-8 px-8 pt-8 pb-8">
-			
-			<div id="cardGridSection" class="col-span-8 grid grid-cols-3 gap-6">
-				
-				<div id="emergencyCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">জাতীয় জরুরি সেবা</h2>
-					<p id="cardDetail">National Emergency</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">999</p>
-					<p id="badge" class="badge badge-ghost ">সার্বজনীন</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="policeCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">পুলিশ হেল্পলাইন</h2>
-					<p id="cardDetail">Police Helpline Number</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">999</p>
-					<p id="badge" class="badge badge-ghost ">সার্বজনীন</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="fireServiceCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">ফায়ার সার্ভিস</h2>
-					<p id="cardDetail">Fire Service Number</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">999</p>
-					<p id="badge" class="badge badge-ghost ">সার্বজনীন</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="ambulanceCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">অ্যাম্বুলেন্স সেবা</h2>
-					<p id="cardDetail">Ambulance Service</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">19994-999...</p>
-					<p id="badge" class="badge badge-ghost ">বিশেষ</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="womanChildCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">নারী ও শিশু হেল্পলাইন</h2>
-					<p id="cardDetail">Women & Child Helpline</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">109</p>
-					<p id="badge" class="badge badge-ghost ">বিশেষ</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="corroptionCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">দুর্নীতি দমন</h2>
-					<p id="cardDetail">Anti-Corruption Helpline</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">106</p>
-					<p id="badge" class="badge badge-ghost ">বিশেষ</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="electricCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">বিদ্যুৎ হেল্পলাইন</h2>
-					<p id="cardDetail">Electricity Helpline</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">16219</p>
-					<p id="badge" class="badge badge-ghost ">বিশেষ</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="bracCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">গ্যাস হেল্পলাইন</h2>
-					<p id="cardDetail">Gas Helpline</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">15445</p>
-					<p id="badge" class="badge badge-ghost ">বিশেষ</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-				<div id="raiwayCard" class="card w-full h-auto border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200  ">
-					<div id="cardTop" class="flex justify-between">
-						<img class="w-[48px] h-[48px] bg-secondary-content rounded p-2 " src="static/emergency.png" alt="" />
-						<p class="text-3xl">❣️</p>
-					</div>
-					<h2 id="cardTitle" class="text-3xl font-bold pt-[16px] ">রেলওয়ে হেল্পলাইন</h2>
-					<p id="cardDetail">Railway Helpline</p>
-					<p id="number" class="text-3xl font-bold pt-[16px] ">163</p>
-					<p id="badge" class="badge badge-ghost ">বিশেষ</p>
-					<div id="cardBottom" class="flex gap-3 p-2">
-						<button id="copybtn" class="btn btn-outline btn-success w-[50%] border rounded" type="submit">Copy</button>
-						<button id="call" class="btn btn-active btn-success w-[50%] rounded" type="submit">Call</button>
-					</div>
-				</div>
-				
-			</div>
-			
-			<div id="listSection" class="col-span-4 h-full">
-				<div id="fullHistoryCard" class="card w-full h-full border shadow-2xl p-[32px] rounded bg-base-100 border-gray-200">
-					<h3 class="text-3xl font-bold text-green-700 mb-4">Full History</h3>
-					<button class="btn btn-sm btn-outline btn-success w-full mb-6">See All History</button>
-					
-					<div class="space-y-2">
-						<div class="flex justify-between items-center py-2 border-b">
-							<div class="flex flex-col">
-								<p class="font-bold text-xl">Road Safety</p>
-								<p class="text-sm text-gray-500">10:30 AM</p>
-							</div>
-							<p class="text-xl font-medium text-green-600">Call</p>
-						</div>
-						
-						<div class="flex justify-between items-center py-2 border-b">
-							<div class="flex flex-col">
-								<p class="font-bold text-xl">Child Safety</p>
-								<p class="text-sm text-gray-500">Yesterday</p>
-							</div>
-							<p class="text-xl font-medium text-green-600">Call</p>
-						</div>
-						
-						<div class="flex justify-between items-center py-2 border-b">
-							<div class="flex flex-col">
-								<p class="font-bold text-xl">Inland Emergency</p>
-								<p class="text-sm text-gray-500">2 days ago</p>
-							</div>
-							<p class="text-xl font-medium text-green-600">Call</p>
-						</div>
+<body class="w-full min-h-screen">
 
-						<div class="flex justify-between items-center py-2 border-b">
-							<div class="flex flex-col">
-								<p class="font-bold text-xl">Drug Control</p>
-								<p class="text-sm text-gray-500">Last Week</p>
-							</div>
-							<p class="text-xl font-medium text-green-600">Call</p>
-						</div>
-						
-						<div class="flex justify-between items-center py-2 border-b">
-							<div class="flex flex-col">
-								<p class="font-bold text-xl">Tax Consultation</p>
-								<p class="text-sm text-gray-500">3 Months Ago</p>
-							</div>
-							<p class="text-xl font-medium text-green-600">Call</p>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			
-		</div>
-		
-	</main>
-	
-	
-	<footer class="">
-		
-	</footer>
-	
-	<script src="script.js" type="text/javascript" charset="utf-8"></script>
+  <!-- HEADER -->
+  <header class="w-full flex flex-wrap justify-between items-center px-4 md:px-8 py-4 bg-white shadow-sm">
+    <div class="flex flex-wrap gap-3 items-center">
+      <img class="w-[48px] h-[48px] md:w-[62px] md:h-[62px]" src="static/logo.png" alt="" />
+      <p class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-green-500">Emergency Services</p>
+    </div>
+
+    <div class="flex justify-end items-center gap-3 md:gap-6 mt-3 md:mt-0">
+      <div class="badge badge-lg p-3 md:p-5 border-none bg-red-100 text-red-500 font-bold text-2xl md:text-3xl shadow-md">
+        <span>❤️</span><span id="navHeartCount" class="ml-2">2</span>
+      </div>
+      <div class="badge badge-lg p-3 md:p-5 border-none bg-yellow-100 text-yellow-600 font-bold text-2xl md:text-3xl shadow-md">
+        <span>💰</span><span class="ml-2">200</span>
+      </div>
+      <div class="badge badge-lg p-3 md:p-5 border-none bg-blue-100 text-blue-600 font-bold text-2xl md:text-3xl shadow-md">
+        <span>📋</span><span class="ml-2">5</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <div class="w-full min-h-[180px] md:h-[240px] bg-green-700 flex flex-col gap-3 md:gap-4 justify-center items-center text-center px-4">
+      <img class="w-[72px] h-[72px] md:w-[92px] md:h-[92px]" src="static/logo-dark.png" alt="" />
+      <h1 class="text-3xl md:text-5xl text-white font-bold">Emergency Service Directory</h1>
+      <p class="text-base md:text-xl text-white max-w-[90%] md:max-w-[70%]">
+        Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
+      </p>
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 px-4 md:px-8 pt-8 pb-8">
+
+      <!-- LEFT CARDS -->
+      <div class="col-span-1 lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Repeat this card 9 times with different content -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">জাতীয় জরুরি সেবা</h2>
+          <p>National Emergency</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">999</p>
+          <p class="badge badge-ghost mt-2">সার্বজনীন</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">পুলিশ হেল্পলাইন</h2>
+          <p>Police Helpline Number</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">999</p>
+          <p class="badge badge-ghost mt-2">সার্বজনীন</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">ফায়ার সার্ভিস</h2>
+          <p>Fire Service Number</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">999</p>
+          <p class="badge badge-ghost mt-2">সার্বজনীন</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">অ্যাম্বুলেন্স সেবা</h2>
+          <p>Ambulance Service</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">19994-999...</p>
+          <p class="badge badge-ghost mt-2">বিশেষ</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">নারী ও শিশু হেল্পলাইন</h2>
+          <p>Women & Child Helpline</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">109</p>
+          <p class="badge badge-ghost mt-2">বিশেষ</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">দুর্নীতি দমন</h2>
+          <p>Anti-Corruption Helpline</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">106</p>
+          <p class="badge badge-ghost mt-2">বিশেষ</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">বিদ্যুৎ হেল্পলাইন</h2>
+          <p>Electricity Helpline</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">16219</p>
+          <p class="badge badge-ghost mt-2">বিশেষ</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="neHeartBtn" class=" neHeartBtn text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">গ্যাস হেল্পলাইন</h2>
+          <p>Gas Helpline</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">15445</p>
+          <p class="badge badge-ghost mt-2">বিশেষ</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card w-full h-auto border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <div class="flex justify-between">
+            <img class="w-[48px] h-[48px] bg-secondary-content rounded p-2" src="static/emergency.png" alt="" />
+            <p id="" class=" neHeartBtn  text-3xl">❣️</p>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold pt-4">রেলওয়ে হেল্পলাইন</h2>
+          <p>Railway Helpline</p>
+          <p class="text-2xl md:text-3xl font-bold pt-4">163</p>
+          <p class="badge badge-ghost mt-2">বিশেষ</p>
+          <div class="flex gap-3 p-2">
+            <button class="btn btn-outline btn-success w-1/2 border rounded">Copy</button>
+            <button class="btn btn-active btn-success w-1/2 rounded">Call</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT HISTORY -->
+      <div class="col-span-1 lg:col-span-4 w-full">
+        <div class="card w-full h-full border shadow-2xl p-6 md:p-8 rounded bg-base-100 border-gray-200">
+          <h3 class="text-2xl md:text-3xl font-bold text-green-700 mb-4">Full History</h3>
+          <button class="btn btn-sm md:btn-md btn-outline btn-success w-full mb-6">See All History</button>
+
+          <div class="space-y-3 md:space-y-2">
+            <div class="flex justify-between items-center py-2 border-b">
+              <div class="flex flex-col">
+                <p class="font-bold text-lg md:text-xl">Road Safety</p>
+                <p class="text-sm text-gray-500">10:30 AM</p>
+              </div>
+              <p class="text-lg md:text-xl font-medium text-green-600">Call</p>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b">
+              <div class="flex flex-col">
+                <p class="font-bold text-lg md:text-xl">Child Safety</p>
+                <p class="text-sm text-gray-500">Yesterday</p>
+              </div>
+              <p class="text-lg md:text-xl font-medium text-green-600">Call</p>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b">
+              <div class="flex flex-col">
+                <p class="font-bold text-lg md:text-xl">Inland Emergency</p>
+                <p class="text-sm text-gray-500">2 days ago</p>
+              </div>
+              <p class="text-lg md:text-xl font-medium text-green-600">Call</p>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b">
+              <div class="flex flex-col">
+                <p class="font-bold text-lg md:text-xl">Drug Control</p>
+                <p class="text-sm text-gray-500">Last Week</p>
+              </div>
+              <p class="text-lg md:text-xl font-medium text-green-600">Call</p>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b">
+              <div class="flex flex-col">
+                <p class="font-bold text-lg md:text-xl">Tax Consultation</p>
+                <p class="text-sm text-gray-500">3 Months Ago</p>
+              </div>
+              <p class="text-lg md:text-xl font-medium text-green-600">Call</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-gray-500">
+    © 2025 Emergency Services — All rights reserved
+  </footer>
+
+  <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
