@@ -19,6 +19,9 @@ const cardCopyBtn = document.querySelectorAll(".gridCopyBtn");
 
 cardCopyBtn.forEach(function(btn) {
   btn.addEventListener("click", function() {
+    alert("copied text") ;
+    let pnNumber = btn.closest(".card").querySelector(".callingNumber").innerText;
+    navigator.clipboard.writeText(pnNumber);
     let copyValues = Number(navCopyNumber.innerText);
     copyValues += 1;
     navCopyNumber.innerText = copyValues;
